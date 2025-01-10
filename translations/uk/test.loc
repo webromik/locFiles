@@ -1,0 +1,39 @@
+; *************************************************************************
+; hmbwx5hc.loc
+; *************************************************************************
+; English
+; *************************************************************************
+;   Version 5.00      V02  JoK   integration in hmcyc.loc
+; *************************************************************************
+#include hmcyc.loc
+; *************************************************************************
+5164	Error: Platform surfaces does not fit to the requirements
+5800	Error: Selected flank surface is not rotational, ruled or planar
+5801	Info: Selected flank surface is a rotational surface
+5802	Error: No blade surfaces selected
+5803	Info: Spiral path calculation
+5804	Info: Contact path calculation
+5805	Info: Selected flank surface is a planar surface
+5806	Info: Selected flank surface is a ruled surface
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
