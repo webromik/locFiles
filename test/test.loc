@@ -1,181 +1,39 @@
-;***********************************************************************
-; hyperMILL V6 in MDT hmMdCyc.loc english
-; *R01      GuL      /  /01  first version
-;           GaT:   05/16/01  text
-;			JaH:   10/10/02  5X Blade
-;           JaH:   26.04.2005  New V9
-;***********************************************************************
-#include hmbase.loc
-
-NoTool	Missing reference to tool
-TContErr	Tool contains error(s)
-TContWarn	Tool contains warning(s)
-;)
-TTChk	Tapered tool used and taper check disabled -> \nNo collision detection possible
-;)
-THChk	Tool with holder/-spindle used and holder check disabled ->\nNo collision detection possible
-;)
-TSChk	Tool with thick shaft used and shaft check disabled ->\nNo collision detection possible
-
-MaDefNEx	Missing milling area definition
-MaDefContErr	Milling area definition contains errors
-MaDefContWarn	Milling area definition contains warnings
+; *************************************************************************
+; hmbwx5hc.loc
+; *************************************************************************
+; English
+; *************************************************************************
+;   Version 5.00      V02  JoK   integration in hmcyc.loc
+; *************************************************************************
+#include hmcyc.loc
+; *************************************************************************
+5164	Error: Platform surfaces does not fit to the requirements
+5800	Error: Selected flank surface is not rotational, ruled or planar
+5801	Info: Selected flank surface is a rotational surface
+5802	Error: No blade surfaces selected
+5803	Info: Spiral path calculation
+5804	Info: Contact path calculation
+5805	Info: Selected flank surface is a planar surface
+5806	Info: Selected flank surface is a ruled surface
 
 
-BotHTop	Bottom higher than top
-ClBelTop	Clearance plane below top
-ClBelBot	Clearance plane below bottom
-ClBelTAS	Clearance plane below top plus clearance distance
-TBullClBelTAS	Tool reference is 'Center'->\nClearance plane below top plus clearance distance plus corner radius
-TBallClBelTAS	Tool reference is 'Center'->\nClearance plane below top plus clearance distance plus tool radius
-TRefDiff	Tool reference within job different to tool reference within tool definition
-TLimit	Encountered overridden cutting profile values which exceed tool limits: [props]
 
 
-NoBndsAcc	[Nr] of [NrAll] boundaries are not accessible
-BndsAcuteAng	[Nr] of [NrAll] boundaries contain acute angles
-BndsSelfInts	[Nr] of [NrAll] boundaries contain self intersections
-BndsInts	[Nr] of [NrAll] boundaries contain intersections with other boundaries
-
-NoCnts	Missing contours
-NoCntsAcc	[Nr] of [NrAll] contours are not accessible
-BotHTopCnt	Bottom higher than top for [Nr] contours
-ClBelTopCnt	Clearance plane below top for [Nr] contours
-ClBelBotCnt	Clearance plane below bottom for [Nr] contours
-ClBelTASCnt	Clearance plane below top plus clearance distance for [Nr] contours
-NoValRect	[Nr] contour(s) are (is) not valid rectangle(s)
-NoValCirc	[Nr] contour(s) are (is) not valid circle(s)
-CntsAcuteAng	[Nr] of [NrAll] contours contain acute angles
-CntsSelfInts	[Nr] of [NrAll] contours contain self-intersections
-
-ModNEx	Model file "[File]" not existing
-StockNEx	Stock file "[File]" not existing
-
-TTSpWrNoSpiral	Tool type is Woodruff or lollipop->\nSpiral stepdown is disabled
-TTSpNoSpiral	Tool type is Woodruff or lollipop->\nSpiral stepdown is disabled
-TTSpWrHldChkStop	Tool type is Woodruff or lollipop->\nHolder check is fixed to "Stop"
-
-NoCent	Missing central curve
-NoCentAcc	Central curve not accessible
-
-ShaftAllTooSmall	Shaft allowance in parallel mode should be greater 0.0
 
 
-;Rupp
-BndMdeF	Planar mode is 'Outside-in' ->\nBoundary mode fixed to [Value]
-BndMdePast	Past
-FpCleanBnd	Finish pass is 'Clean Boundary' ->\nApproach macro fixed to 'Ramp'\nRetract macro fixed to 'Tangential' with Length '0'
-HorStpRes	Planar mode is 'Outside-in' ->\nStepover restricted from '0' to '0.5'
-PlunDis	Planar mode is 'Outside-in' ->\nPlunge point disabled
 
 
-; Zres / Zfin / Stoc / Scal / Rupp / Rmat/Pecl / Iso / Cast
-TEndAlErr	Tool type is 'Endmill'->\nAllowance must be bigger or equal to '0'
-TBallAlErr	Tool type is 'Ballmill'->\nNegative allowances must be smaller than tool radius - machining tolerance
-TBullAlErr	Tool type is 'Bullnose endmill'->\nNegative allowances must be smaller than corner radius
-
-;Rupp/Zfin/Zres
-TBallHorAlErr	Tool type is 'Ballmill'->\nHorizontal allowance must be bigger or equal to '0'
-TEndHorAlErr	Tool type is 'Endmill'->\nNegative additional allowance XY must be smaller than toolradius - machining tolerance
-TBullHorAlErr	Tool type is 'Bullnose endmill'->\nNegative horizontal allowance must be smaller than toolradius-cornerradius
 
 
-; Zfin / Prof / Pecl / Iso
-TEndSlMdeF	Tool type is 'Endmill' and allowance is <= '0'->\nSlope mode fixed to 'OFF'
-TBallSlMdeF	Tool type is 'Ballmill' and allowance + tool radius <= '0'->\nSlope mode fixed to 'OFF'
-TBullSlMdeF	Tool type is 'Bullnose endmill' and allowance + corner radius <= '0'->\nSlope mode fixed to 'OFF'
-ZFTRmacFOn	Tool type is 'Woodruff' or 'Lollipop'->\nReturn macro is fixed to \"Yes\"
-
-;Zfin
-PlnDetF	Vertical infeed is 'Scallop height'->\nPlane level detection fixed to 'OFF'
-ZFSpRmacF	Strategy is 'Spiral stepdown'->\nReturnmacro is fixed to 'NO'
-VertInfF	Tool type is 'Endmill'->\nVertical infeed fixed to 'Constant stepdown'
 
 
-; Scal / Prof / Plun
-NoPrfs	Missing profiles
-NoPrf	Missing profile
-NoPrfsAcc	[Nr] of [NrAll] profiles are not accessible
-NoPrfAcc	Profile not accessible
-NoSncAcc	[Nr] of [NrAll] synchronization lines are not accessible
 
 
-; Scal / Prof /Iso
-NAl3dfWarn	Eventually existing negative allowances within the 3DF file\nmight cause problems within the cycle
 
 
-; Zres / Rif2
-NoRefJb	Missing reference job
-QOvrPar	Overwrite parameters with parameters of reference job?
-DelJb	Job will be removed!
 
 
-; Rif2
-TBRT	Tool diameter bigger than diameter of reference tool + additional offset
-All2Big	XY allowance of reference job is bigger than allowance
 
 
-; Prof
-XYOSlFix	XY-Optimization is active -> Slope mode fixed to 'OFF'
-
-TEndHorInfF	Tooltype is 'Endmill' ->\nHorizontal infeed mode fixed to 'Constant stepover'
-TBullHorInfF	Tooltype is 'Bullnose' ->\nHorizontal infeed mode fixed to 'Constant stepover'
-
-SgleBndSl	Only one boundary possible with slope mode
-PockHofInfF	Strategy is 'Pocket' ->\nHorizontal infeed mode fixed to 'Constant stepover'
-
-; Plun
-NoDrfCr	Unable to create file "[File]" for drilling positions
-QStep	Stepover will be changed to [NewValue]
-QDP	Generation of drill positions will be disabled
-QAFO	Access from outside will be disabled
-QFP	Finish pass will be disabled
-QFPTp	Type of finish pass will be changed to 'down'
 
 
-; Pecl
-RTDiaWarn	Reference tool diameter bigger than 20% of tool diameter
-RTDiaErr	Reference tool diameter smaller than tool diameter
-
-
-; Md
-T2BigMd	Tool too big (hole diameter is [Dia])
-
-
-;Iso
-NoSurfs	Missing surfaces
-NoSurfAcc	[Nr] of [NrAll] surfaces are not accessible
-
-;Cp
-T2BigCp	Tool too big (pocket diameter is [Dia])
-Core2Big	Core-offset too big (pocket radius is [Rad])
-
-
-;Ccp
-StepovRes	Planar mode is 'Outside-in' ->\nStepover restricted from '[From]' to '[To]'
-
-
-;Cc
-PcNotCtr	Path compensation is not 'Center path' ->\nApproach macro will be changed to 'Quarter circle'
-PcNRamp	Path compensation is on->\nApproach macro 'Ramp' will be disabled
-PcNNoMac	Path compensation is on ->\nApproach and retract macro 'None' is disabled
-
-
-;Plu
-NoPpAcc	[Nr] of [NrAll] plunge points are not accessible
-StepovTBig	Stepover must be smaller than cutting width of tool ([Value])
-SideStTBig	Sidestep should be smaller than [Value]
-StepovTSmall	For Drilling stepover should be bigger than tool radius ([Value])
-NoPlunStart	Neither plunge point nor access from outside specified
-PlRetrDis	Strategy is Drilling ->\nRetract macro is disabled!
-
-
-;5X
-NoTiltCurve	Missing tilt curve
-NoTiltCurveAcc	Tilt curve not accessible
-NoSegmentSyncsAcc	[Nr] of [NrAll] segment limits are not accessible
-NoAllXY	Stock allowance XY will be disabled!
-SEAbClear	Starting or end point of [Nr] lines of [NrAll] lines above clearance plane
-PtAbClear	[Nr] of [NrAll] points above clearance plane
-PlAbClear	[Nr] of [NrAll] contours (partially) above clearance plane
-TTShCnt	Tool too short for [Nr] of [NrAll] contours ([ChkInfo])
