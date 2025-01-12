@@ -8,4 +8,3 @@ commit_message: '[skip ci]'
 files:
   - source: /test/test.loc
     translation: /translations/%two_letters_code%/test.loc
-    type: ini
