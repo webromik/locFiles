@@ -7,4 +7,5 @@ pull_request_labels:
 commit_message: '[skip ci]'
 files:
   - source: /test/test.loc
+    dest: /test/%file_name%.ini
     translation: /translations/%two_letters_code%/test.loc
